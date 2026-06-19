@@ -62,7 +62,6 @@ function WorkSpace({ isTerminalOpen = false, onToggleTerminal }: WorkSpaceProps)
                         <div className="vscode-terminal" style={{ height: `${terminalHeight}px` }}>
                             <TerminalPanel 
                                 onClose={onToggleTerminal || (() => {})}
-                                onResize={(height: number) => setTerminalHeight(height)}
                             />
                         </div>
                     </>

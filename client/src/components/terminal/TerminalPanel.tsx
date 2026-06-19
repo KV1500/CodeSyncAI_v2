@@ -4,10 +4,9 @@ import { VscClearAll } from "react-icons/vsc"
 
 interface TerminalPanelProps {
     onClose: () => void
-    onResize: (height: number) => void
 }
 
-function TerminalPanel({ onClose, onResize }: TerminalPanelProps) {
+function TerminalPanel({ onClose }: TerminalPanelProps) {
     const [output, setOutput] = useState<string[]>([
         "Welcome to Code Sync Terminal",
         "Type 'help' for available commands",
